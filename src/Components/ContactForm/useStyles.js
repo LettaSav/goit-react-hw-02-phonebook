@@ -8,30 +8,36 @@ const useStyles = createUseStyles({
     justifyContent: 'baseline',
     padding: 16,
     width: 16 * 20,
-    margin: 0,
+    margin: 'auto',
   },
 
   input_label: {
     marginBottom: 5,
     margin: 'auto',
   },
+
   contacts_input: {
+    width: 240,
+    height: 50,
     marginBottom: 15,
     margin: 'auto',
-    boxShadow: 'inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF',
-    boxSizing: 'border-box',
-    transition: 'all 0.2s ease-in-out',
-    border: 0,
-    outline: 0,
+    background: '#fff',
+
     borderRadius: 20,
+    border: 0,
     padding: 10,
-    backgroundColor: '#EBECF0',
+
     textShadow: '1px 1px 0 white',
+    outline: 'none',
+    fontSize: 16,
+    fontFamily: 'Abel sans-serif',
+    color: '#5E6472',
+    transition: '0.2s linear',
   },
   submit_button: {
     width: 120,
     color: '#61677C',
-    boxShadow: 'inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF',
+
     transition: 'all 0.2s ease-in-out',
     cursor: 'pointer',
     margin: 'auto',
@@ -40,10 +46,12 @@ const useStyles = createUseStyles({
     outline: 0,
     borderRadius: 16 * 20,
     padding: 10,
-    backgroundColor: '#EBECF0',
+    backgroundColor: '#fff',
     '&:hover': {
-      backgroundColor: 'black',
-      color: 'white',
+      backgroundColor: '#B8F2E6',
+      color: '#5E6472',
+      transform: 'translatey(3px)',
+      boxShadow: 'none',
     },
   },
 });

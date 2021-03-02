@@ -36,6 +36,7 @@ const ContactForm = ({ onSubmit }) => {
         className={classes.contacts_input}
         name="name"
         type="text"
+        placeholder="John Smith"
         value={name}
         onChange={handleInputChange}
       ></input>
@@ -44,6 +45,7 @@ const ContactForm = ({ onSubmit }) => {
         className={classes.contacts_input}
         name="number"
         type="tel"
+        placeholder="111-11-111-11"
         value={number}
         onChange={handleInputChange}
       ></input>
